@@ -150,8 +150,8 @@ namespace Simulation_2.Areas.Manage.Controllers
                     return View();
                 }
 
-                dbTeamMember.ImgUrl.RemoveFile(_env.WebRootPath, "/Upload/Doctor");
-                dbTeamMember.ImgUrl = teamMemberVm.File.CreateFile(_env.WebRootPath, "Upload/Doctor");
+                dbTeamMember.ImgUrl.RemoveFile(_env.WebRootPath, "/Upload/TeamMembers");
+                dbTeamMember.ImgUrl = teamMemberVm.File.CreateFile(_env.WebRootPath, "Upload/TeamMembers");
             }
 
 
